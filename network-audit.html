@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample home network security audit report with findings, risk levels and fixes.">
+  <title>Home Network Security Audit | David Chideya Ikechukwu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { document.documentElement.setAttribute("data-theme", localStorage.getItem("portfolio-theme") || "dark"); } catch (e) {}
+  </script>
+  <script src="main.js"></script>
+  <script src="network-demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="David Ikechukwu home">
+        <div class="brand-mark">DI</div>
+        <span class="brand-name">David Ikechukwu</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark and light mode">&#9728;&#65039;</button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Home Network Security Audit</h1>
+        <p>A sample audit report: findings, risk levels and how to fix them.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Audit summary">
+      <div class="container">
+        <div class="grid grid-3">
+          <div class="card" style="text-align:center">
+            <div class="score" id="auditScore">0/100</div>
+            <p>Network security score</p>
+          </div>
+          <div class="card">
+            <h3>Open Findings</h3>
+            <p><span class="badge sev-high">High</span> <strong id="countHigh">0</strong> &nbsp;
+               <span class="badge sev-medium">Medium</span> <strong id="countMedium">0</strong> &nbsp;
+               <span class="badge sev-low">Low</span> <strong id="countLow">0</strong></p>
+            <p style="margin-bottom:0">Tick "Mark as fixed" on a finding to watch the score go up.</p>
+          </div>
+          <div class="card">
+            <h3>Scope</h3>
+            <p style="margin-bottom:0">A typical home network: one router, a laptop, a phone and a smart TV. This is a sample audit for learning purposes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-label="Devices">
+      <div class="container">
+        <div class="section-title"><h2>Devices Found</h2></div>
+        <div class="table-wrap">
+          <table>
+            <caption>Network device inventory</caption>
+            <thead><tr><th scope="col">Device</th><th scope="col">Type</th><th scope="col">Risk Level</th></tr></thead>
+            <tbody id="deviceRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Findings">
+      <div class="container">
+        <div class="section-title"><h2>Audit Findings</h2><p>Click a finding to read the risk and the recommended fix.</p></div>
+        <div class="filters" role="group" aria-label="Filter findings">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="high">High</button>
+          <button type="button" class="filter-btn" data-filter="medium">Medium</button>
+          <button type="button" class="filter-btn" data-filter="low">Low</button>
+          <button type="button" class="filter-btn" id="resetAudit">Reset</button>
+        </div>
+        <ul class="findings-list" id="findings"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> David Chideya Ikechukwu. Miva Open University.</p>
+      <ul class="footer-links">
+        <li><a href="projects.html">&larr; Back to Projects</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

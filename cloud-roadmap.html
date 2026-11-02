@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive roadmap tracker for becoming a cloud engineer.">
+  <title>Cloud Engineer Roadmap | David Chideya Ikechukwu</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { document.documentElement.setAttribute("data-theme", localStorage.getItem("portfolio-theme") || "dark"); } catch (e) {}
+  </script>
+  <script src="main.js"></script>
+  <script src="roadmap-demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="David Ikechukwu home">
+        <div class="brand-mark">DI</div>
+        <span class="brand-name">David Ikechukwu</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark and light mode">&#9728;&#65039;</button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Cloud Engineer Roadmap</h1>
+        <p>My step-by-step path from networking basics to cloud certification.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Cloud engineer roadmap">
+      <div class="container">
+        <div class="card" style="margin-bottom:1.6rem">
+          <h2 style="font-size:1.4rem">My Progress</h2>
+          <div class="progress-row">
+            <div class="bar" aria-hidden="true"><span id="rmFill" style="width:0"></span></div>
+          </div>
+          <p class="counter" id="rmText" aria-live="polite">0% of the roadmap complete</p>
+          <button class="btn btn-outline btn-sm" id="rmReset" type="button">Reset progress</button>
+          <p class="demo-note">Tick topics as you learn them. Your progress is saved in this browser.</p>
+        </div>
+        <div class="roadmap" id="roadmap"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> David Chideya Ikechukwu. Miva Open University.</p>
+      <ul class="footer-links">
+        <li><a href="projects.html">&larr; Back to Projects</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

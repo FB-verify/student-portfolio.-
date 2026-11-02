@@ -3,24 +3,14 @@
 A responsive multi-page website built with HTML, CSS and JavaScript.
 
 ## Pages
-- `index.html` - Home (photo, welcome message, biography, cyber video and audio)
-- `about.html` - Education, career goal, skills, hobbies
-- `projects.html` - Three projects with images and links
-- `planner.html` - Academic planner (add, complete, delete tasks)
-- `contact.html` - Contact form with JavaScript validation
+- `index.html` - Home
+- `about.html` - About Me
+- `projects.html` - Projects
+- `planner.html` - Academic Planner
+- `contact.html` - Contact form
+- `password-checker.html`, `network-audit.html`, `cloud-roadmap.html` - project demos
 
-## Folders
-- `css/style.css` - external stylesheet (dark/light themes, Flexbox, Grid, animations)
-- `js/` - `main.js` (theme toggle, menu), `planner.js`, `contact.js`
-- `images/` - photo and project screenshots
-- `media/` - cybersecurity video and ambient audio
+All files are in one folder on purpose, so the site can be uploaded from a phone.
 
 ## Run locally
 Open `index.html` in any browser.
-
-## Host on GitHub Pages
-1. Create a new public repository (for example `student-portfolio`).
-2. Upload everything inside this folder (keep the folder structure).
-3. Go to Settings > Pages > Source: "Deploy from a branch", branch `main`, folder `/ (root)`, then Save.
-4. After about a minute your site is live at `https://YOUR-USERNAME.github.io/student-portfolio/`.
-5. Submit that link and the repository link.
