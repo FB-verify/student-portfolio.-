@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by David Chideya Ikechukwu: a password strength checker, a home network security audit and a cloud learning roadmap.">
+  <title>Projects | David Chideya Ikechukwu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try { document.documentElement.setAttribute("data-theme", localStorage.getItem("portfolio-theme") || "dark"); } catch (e) {}
+  </script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="David Ikechukwu home">
+        <div class="brand-mark">DI</div>
+        <span class="brand-name">David Ikechukwu</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark and light mode">&#9728;&#65039;</button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>My Projects</h1>
+        <p>Hands-on work that shows what I'm learning in cybersecurity, web development and cloud computing.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Project list">
+      <div class="container">
+        <div class="grid grid-3">
+
+          <article class="card project-card reveal">
+            <div class="thumb"><img src="images/project-password.svg" alt="Screenshot of the Password Strength Checker showing a strong password rating" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Password Strength Checker</h3>
+              <p>A web tool that scores a password as the user types. It checks length, upper and lower case letters, numbers and symbols, then shows a colour-coded strength bar with tips.</p>
+              <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Security</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://github.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="thumb"><img src="images/project-network.svg" alt="Diagram of a home network with a router, laptop, phone and smart TV, with audit findings" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Home Network Security Audit</h3>
+              <p>A written audit of a typical home network. It maps devices, checks Wi-Fi encryption and default passwords, and recommends fixes ranked by risk level.</p>
+              <ul class="tag-list"><li>Networking</li><li>Risk Assessment</li><li>Report Writing</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://github.com/" target="_blank" rel="noopener noreferrer">View Report</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/" target="_blank" rel="noopener noreferrer">Source Files</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="thumb"><img src="images/project-cloud.svg" alt="Screenshot of a cloud engineer roadmap page with three learning steps" loading="lazy"></div>
+            <div class="project-body">
+              <h3>Cloud Engineer Roadmap</h3>
+              <p>A responsive roadmap page that tracks my path to becoming a cloud engineer, from networking and Linux to cloud fundamentals and certifications.</p>
+              <ul class="tag-list"><li>HTML</li><li>CSS Grid</li><li>Cloud</li><li>Planning</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary btn-sm" href="https://github.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="btn btn-outline btn-sm" href="https://github.com/" target="_blank" rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="section-title reveal" style="margin-top:3rem">
+          <h2>Project Summary</h2>
+        </div>
+        <div class="table-wrap reveal">
+          <table>
+            <caption>At a glance</caption>
+            <thead><tr><th scope="col">Project</th><th scope="col">Focus Area</th><th scope="col">Main Tools</th><th scope="col">Status</th></tr></thead>
+            <tbody>
+              <tr><td>Password Strength Checker</td><td>Cybersecurity and web</td><td>HTML, CSS, JavaScript</td><td>Completed</td></tr>
+              <tr><td>Home Network Security Audit</td><td>Network security</td><td>Documentation, risk matrix</td><td>Completed</td></tr>
+              <tr><td>Cloud Engineer Roadmap</td><td>Cloud and planning</td><td>HTML, CSS Grid</td><td>In progress</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> David Chideya Ikechukwu. Miva Open University.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

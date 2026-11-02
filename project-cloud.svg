@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Cloud learning roadmap screenshot">
+  <rect width="640" height="360" fill="#0b1424"/>
+  <rect x="0" y="0" width="640" height="34" fill="#101c33"/>
+  <circle cx="18" cy="17" r="5" fill="#ff5c7a"/><circle cx="36" cy="17" r="5" fill="#f5b83d"/><circle cx="54" cy="17" r="5" fill="#2fd37a"/>
+  <text x="90" y="21" font-family="monospace" font-size="11" fill="#9db0cc">cloud-roadmap.html</text>
+  <text x="40" y="80" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#e6edf7">My Cloud Engineer Roadmap</text>
+  <g font-family="Segoe UI, Arial" font-size="13" fill="#e6edf7">
+    <rect x="40" y="105" width="170" height="90" rx="12" fill="#101c33" stroke="#00e0b0" stroke-width="2"/>
+    <text x="56" y="132" font-weight="700" fill="#00e0b0">Step 1</text><text x="56" y="155">Networking basics</text><text x="56" y="175" fill="#9db0cc">Done</text>
+    <rect x="235" y="105" width="170" height="90" rx="12" fill="#101c33" stroke="#4aa8ff" stroke-width="2"/>
+    <text x="251" y="132" font-weight="700" fill="#4aa8ff">Step 2</text><text x="251" y="155">Linux + Git</text><text x="251" y="175" fill="#9db0cc">In progress</text>
+    <rect x="430" y="105" width="170" height="90" rx="12" fill="#101c33" stroke="#203158" stroke-width="2"/>
+    <text x="446" y="132" font-weight="700" fill="#9db0cc">Step 3</text><text x="446" y="155">Cloud fundamentals</text><text x="446" y="175" fill="#9db0cc">Next</text>
+  </g>
+  <path d="M120 270 h120" stroke="#203158" stroke-width="3"/>
+  <g>
+    <path d="M200 300 a28 28 0 0 1 8 -54 a38 38 0 0 1 72 -6 a30 30 0 0 1 10 60 z" fill="#4aa8ff" opacity="0.9"/>
+    <path d="M360 300 a28 28 0 0 1 8 -54 a38 38 0 0 1 72 -6 a30 30 0 0 1 10 60 z" fill="#00e0b0" opacity="0.9"/>
+  </g>
+  <text x="240" y="330" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#9db0cc">Compute</text>
+  <text x="400" y="330" text-anchor="middle" font-family="Segoe UI, Arial" font-size="12" fill="#9db0cc">Storage</text>
+</svg>

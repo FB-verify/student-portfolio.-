@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio of David Chideya Ikechukwu, a cybersecurity student at Miva Open University and aspiring cloud engineer.">
+  <title>Home | David Chideya Ikechukwu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply saved theme immediately to avoid a flash of the wrong colours */
+    try { document.documentElement.setAttribute("data-theme", localStorage.getItem("portfolio-theme") || "dark"); } catch (e) {}
+  </script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="David Ikechukwu home">
+        <div class="brand-mark">DI</div>
+        <span class="brand-name">David Ikechukwu</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark and light mode">&#9728;&#65039;</button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">&gt; welcome_to_my_portfolio</span>
+          <h1 id="hero-title">Hi, I'm <span class="grad">David Chideya Ikechukwu</span></h1>
+          <p class="typing" id="typing" aria-live="off">Cybersecurity Student</p>
+          <p class="lead">Welcome to my personal academic portfolio! Here you can learn about my studies, skills and projects, and even use my Academic Planner to stay on top of your own tasks. I'm glad you stopped by.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="projects.html">View My Projects</a>
+            <a class="btn btn-outline" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+        <figure class="photo-frame">
+          <img src="images/david.jpg" alt="Portrait photograph of David Chideya Ikechukwu in a purple polo shirt" width="700" height="822">
+          <span class="photo-badge">&#127891; Miva Open University</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- BRIEF BIOGRAPHY -->
+    <section class="section alt" aria-labelledby="bio-title">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2 id="bio-title">A Brief Biography</h2>
+          <p>A little about who I am and where I'm going.</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card reveal">
+            <h3>Who I Am</h3>
+            <p>I'm a Year 1 Cybersecurity student at Miva Open University in Nigeria. I enjoy understanding how systems work, how they can be attacked, and most importantly how to protect them. I'm curious, disciplined and always learning something new.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Where I'm Going</h3>
+            <p>My goal is to become a Cloud Engineer who designs secure, reliable and scalable systems in the cloud. I'm building my foundation in networking, security and web development, and I plan to earn cloud certifications along the way.</p>
+          </article>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><strong>Year 1</strong><span>Cybersecurity</span></div>
+          <div class="stat"><strong>3</strong><span>Featured Projects</span></div>
+          <div class="stat"><strong>10+</strong><span>Skills Learning</span></div>
+          <div class="stat"><strong>Cloud</strong><span>Career Goal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU WILL FIND -->
+    <section class="section" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2 id="explore-title">Explore the Site</h2>
+          <p>Everything you need to know about me in four pages.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="card reveal" href="about.html" style="color:inherit">
+            <div class="icon" aria-hidden="true">&#128100;</div>
+            <h3>About Me</h3>
+            <p>My education, career goals, skills and hobbies.</p>
+          </a>
+          <a class="card reveal" href="projects.html" style="color:inherit">
+            <div class="icon" aria-hidden="true">&#128187;</div>
+            <h3>Projects</h3>
+            <p>Three projects showing what I'm building and learning.</p>
+          </a>
+          <a class="card reveal" href="planner.html" style="color:inherit">
+            <div class="icon" aria-hidden="true">&#9989;</div>
+            <h3>Academic Planner</h3>
+            <p>An interactive to-do tool to add, complete and delete tasks.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CYBER CORNER (multimedia) -->
+    <section class="section alt" aria-labelledby="cyber-title">
+      <div class="container">
+        <div class="section-title reveal">
+          <h2 id="cyber-title">Cyber Corner</h2>
+          <p>A short cybersecurity video and an ambient sound track to set the mood while you browse.</p>
+        </div>
+        <div class="media-grid">
+          <figure class="media-box reveal">
+            <video controls preload="metadata" poster="images/video-poster.jpg" aria-describedby="video-caption">
+              <source src="media/cyber-intro.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption id="video-caption">Video: Cybersecurity intro showing the CIA triad (Confidentiality, Integrity, Availability).</figcaption>
+          </figure>
+          <div class="media-box reveal">
+            <h3>&#127911; Cyber Ambient Sound</h3>
+            <p>A calm, dark ambient track with sonar pings, perfect for focused study or coding sessions.</p>
+            <audio controls loop preload="none">
+              <source src="media/cyber-ambient.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <h3 style="margin-top:1.2rem">The CIA Triad</h3>
+            <ul class="check-list">
+              <li><strong>Confidentiality:</strong> only the right people see the data.</li>
+              <li><strong>Integrity:</strong> data stays correct and unaltered.</li>
+              <li><strong>Availability:</strong> systems work when you need them.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> David Chideya Ikechukwu. Miva Open University.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
